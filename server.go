@@ -23,7 +23,7 @@ func backgroundImg(w http.ResponseWriter, r *http.Request) {
 		path := r.URL.Path
 		fmt.Println(path)
 		if path == "/" {
-			path = "./media/background.png"
+			path = "/background.png"
 		} else {
 			path = "."+path
 		}
